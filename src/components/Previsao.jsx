@@ -1,8 +1,9 @@
 import React from 'react';
+import {PrevisaoContainer} from "./PrevisaoStyles.js";
 
 const Previsao = ({previsoes}) => {
     return (
-        <div>
+        <PrevisaoContainer>
             <h4>Previsão para as proximas horas</h4>
             <ul>
                 {previsoes.map((previsao) => (
@@ -12,7 +13,7 @@ const Previsao = ({previsoes}) => {
                     </li>
                 ))}
             </ul>
-        </div>
+        </PrevisaoContainer>
     );
 };
 
